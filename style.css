@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plakkaat";
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#main{
+    position: relative;
+    
+}
+#page1{
+    width: 100vw;
+    height: 100vh;
+    padding: 1px 1px;
+}
+#nav1{
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 5vh;
+    background-color: #f65219;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+
+}
+#nav1 h6{
+    color: white;
+    font-size: 15px;
+
+}
+#page1 h4{
+    margin-top: 50px;
+    font-size: 80px;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 10px;
+    text-align: center;
+    color: #f65219;
+    font-family: "Plakkaat";
+    position: relative;
+
+
+}
+
+#page1 .hh::after{
+    content: "-";
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    rotate:-50deg;
+    font-family: "Plakkaat";
+    font-style: italic;
+    color: #f65219;
+    font-size: 90px;
+
+}
+#page1 .hh::before{
+    content: "-";
+    position: absolute;
+    left: 57%;
+    top: -50px;
+    rotate:-50deg;
+    font-family: "Plakkaat";
+    font-style: italic;
+    color: #f65219;
+    font-size: 90px;
+
+}
+
+
+#page1 h1 ,#page1 h2 ,#page1 h3{
+    font-family: "Plakkaat";
+    font-style: italic;
+    color: #161f25;
+    text-align: center;
+
+
+
+}
+#page1 h1{
+    font-size: 200px;
+    font-weight: 400;
+    margin-top: -50px;
+}
+#page1 h2{
+    font-size: 148px;
+    font-weight: 100;
+    margin-top: -90px;
+}
+#page1 h3{
+    font-size: 105px;
+    font-weight: 100;
+    margin-top: -50px;
+}
+
+#overlay{
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 1px 1px ;
+    transition: all ease 1s;
+
+
+}
+
+#nav2{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    margin-top: 30px;
+}
+#nav2prt1{
+    pointer-events: all;
+    display: flex;
+    position: relative;
+
+}
+#nav2prt1 span{
+    font-family: "Plakkaat";
+    font-style: italic;
+    color: #f65219;
+    font-size: 70px;
+    cursor: pointer;
+    
+
+
+}
+#nav2 h5{
+    font-family: "Plakkaat";
+    font-style: italic;
+    color: #161f25;
+    cursor: pointer;
+    font-size: 20px;
+}
+#nav2 h5:hover{
+    color: #f65219;
+
+}
+
+#nav2 h4{
+    
+    font-family: "Plakkaat";
+    font-style: italic;
+    color: #f65219;
+    font-size: 20px;
+   
+}
+#nav2prt1 span::after{
+    content: "-";
+    position: absolute;
+    left: 0px;
+    top: 13px;
+    font-family: "Plakkaat";
+    font-style: italic;
+    color: #f65219;
+    font-size: 70px;
+
+}
+#nav2prt2{
+    pointer-events: all;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#nav3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 900px;
+    padding: 0px 100px;
+    position: absolute;
+    bottom: 50px;
+}
+
+#nav3 h1{
+    
+     font-family: "Plakkaat";
+    font-style: italic;
+    color: #f65219;
+    font-size: 100px;
+    font-weight: 200;
+}
+
+
+#page2{
+    /* position: relative; */
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1px 1px ;
+    
+}
+#page2 #mainimage{
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%,-40%);
+}
+#page2text h1{
+    font-size: 154px;
+    color: #161f25;
+    font-weight: 500;
+    line-height: 114px;
+}
+#page2text h2{
+    font-size: 114px;
+    color: #161f25;
+    font-weight: 500;
+    line-height: 114px;
+}
+#page2text .colororange{
+    color: #f65219;
+}
+#page2text{
+    /* background-color: aqua; */
+    margin-top: 100px;
+}
+#page2 p{
+    position: relative;
+    left: 50%;
+    top: 150px;
+    transform: translate(-50%,0);
+    font-size: 30px;
+    text-align: left;
+    width: 600px;
+    color: rgba(0, 0, 0, 0.725);
+}
+
+#page2multiimages{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 200px;
+   
+
+}
+
+#page2multiimages #image1{
+    position: absolute;
+    left: 100px;
+    top: 40%;
+
+}
+#page2multiimages #image2{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% ,-70%);
+    top: 50%;
+
+}
+#page2multiimages #image2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page2multiimages #image3{
+    position: absolute;
+    right: 100px;
+    top: 45%;
+
+}
+
+#overlay{
+    pointer-events: none;
+}
+#overlay h6{
+    pointer-events: all;
+    rotate: -90deg;
+    text-decoration: underline;
+    position: absolute;
+    left: 0px;
+    top:50%;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: "Plakkaat";
+    font-style: italic;
+
+}
+#overlay h6:hover{
+    color: #f65219;
+}
+
+#leftcart{
+    pointer-events: all;
+    position: fixed;
+    right: -32vw;
+    top: 0;
+    width: 30vw;
+    height: 100vh;
+    background-color: #f65219;
+    color: white;
+    padding: 100px 50px;
+    transition: all ease 1s;
+}
+#leftcart #cross{
+    width: 40px;
+    height: 40px;
+    padding: 5px 5px;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+    transition: all ease 1s;
+
+    
+}
+#leftcart span{
+    position: absolute;
+    width: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    top: 0px;
+    cursor: pointer;
+}
+#leftcart h5{
+    font-size: 20px;
+    font-weight: 900;
+}
+#leftcart h1{
+    margin-top: 150px;
+    text-align: center;
+    top: 30%;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+#page23{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 200px;
+}
+#page23 h1{
+    font-family: "yolele";
+    font-size: 70px;
+    color: #161f25;
+}
+#page23 h2{
+    font-family: "yolele";
+    font-size: 50px;
+    color: #161f25;
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#page23 img{
+    width: 100%;
+}
+#page23 #nutribox{
+    width: 600px;
+     position: relative;
+     left: 50%;
+     transform: translate(-50%,0%);
+     text-align: left;
+     line-height: 40px;
+}
+#page23 #nutribox h5{
+    font-size: 20px;
+}
+#page23 #nutribox h3{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+#page23 #nutribox h4{
+    color: #000000a7;
+    font-size: 20px;
+    font-weight: 100;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page23 #calories{
+    font-family: "yolele";
+    font-size: 40px;
+
+}
+#page23 h6{
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #000000a7;
+}
+#recipi{
+    position: relative;
+    height: 100vh;
+}
+#recipi h4{
+    text-align: left;
+    font-size: 60px;
+    position: absolute;
+    width: 500px;
+    font-weight: 400;
+    color: #161f25;
+    /* background-color: #f65219; */
+}
+
+#recipi h4:hover{
+    color: #f65219;
+    /* background-color: #f65219; */
+}
+
+
+#youmay{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+
+}
+#youmay h1{
+    font-family: "Plakkaat";
+    font-size: 150px;
+    line-height: 140px;
+}
+#youmay #youcolor{
+    color: #f65219;
+}
+#image1text{
+    position: relative;
+    left: 10%;
+    
+}
+#imagetextkeandarkatext{
+    position: absolute;
+    width: 400px;
+    top: 600px;
+    left: 100px;
+}
+#image1text img{
+    width: 350px;
+    position: absolute;
+    left: 10%;
+    top: 100px;
+    animation: lefttoright;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+@keyframes lefttoright {
+    0%{
+        transform: translate(-20% , 0%) rotate(-10deg);
+    }
+    100%{
+        transform: translate(20% , 0%) rotate(10deg);
+    }
+    
+}
+
+
+#image2text{
+    position: relative;
+
+    
+} 
+#allpacket h3{
+    font-size: 40px;
+    
+}
+#allpackettext{
+    position: absolute;
+    top: 215%;
+    left: 40%;
+}
+
+#allpacket img{
+
+    width: 400px;
+    position: absolute;
+    top: 170%;
+    left: 35%;
+    animation: scl;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes scl {
+    0%{
+        scale: 0.8;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+
+#yoleimg{
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 240%;
+}
+
+#end{
+    position: relative;
+    top: 190%;
+    padding-bottom: 100px;
+
+}
