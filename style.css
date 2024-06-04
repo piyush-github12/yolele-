@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Plakkaat;
+  src: url(./subset-Plakkaat-Italic.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
